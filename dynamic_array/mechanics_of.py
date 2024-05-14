@@ -6,3 +6,12 @@ def pushback(self, n):
     # insert at next empty position
     self.arr[self.length] = n
     self.length += 1
+
+def resize(self):
+    self.capacity = 2 * self.capacity
+    newArr = [0] * self.capacity
+    
+    
+    for i in range(self.length):
+        newArr[i] = self.arr[i]
+    self.arr = newArr
