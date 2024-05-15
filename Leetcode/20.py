@@ -3,3 +3,4 @@ class Solution:
         stack = []
         closeToOpen = { ")" : "(", "]" : "[", "}" : "{" }
         
+        for
