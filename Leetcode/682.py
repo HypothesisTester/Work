@@ -13,4 +13,6 @@ class Solution:
                 stack.pop()
             
             else:
-                int(op)
+                stack.append(int(op))
+                
+        return sum(stack)
