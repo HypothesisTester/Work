@@ -3,4 +3,5 @@ class Solution:
         stack = []
         closeToOpen = { ")" : "(", "]" : "[", "}" : "{" }
         
-        for
+        for c in s:
+            if c in closeToOpen:
