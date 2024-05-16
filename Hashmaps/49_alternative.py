@@ -9,5 +9,5 @@ class Solution:
             anagram_map[sorted_s]
             
         for value in anagram_map.values():
-            resulut.append(value)
+            result.append(value)
         
