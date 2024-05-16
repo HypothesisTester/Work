@@ -6,7 +6,7 @@ class Solution:
         
         for s in strs:
             sorted_s = tuple(sorted(s))
-            anagram_map[sorted_s]
+            anagram_map[sorted_s].append(s)
             
         for value in anagram_map.values():
             result.append(value)
