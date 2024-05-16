@@ -5,6 +5,6 @@ class Solution:
         result = []
         
         for s in strs:
-            sorted_s = sorted(s)
+            sorted_s = tuple(sorted(s))
             anagram_map[sorted_s]
         
