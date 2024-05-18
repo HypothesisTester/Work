@@ -50,8 +50,8 @@ class MyLinkedList(object):
             if index < 0 or index >= self.size:
                 return
             
-    current = self.head        
+            current = self.head        
             
              if index == 0:
-            self.head = self.head.next
-        else:
+                self.head = self.head.next
+            else:
