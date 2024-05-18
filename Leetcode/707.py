@@ -42,3 +42,13 @@ class MyLinkedList(object):
             current.next = new_node
             
         self.size += 1
+        
+    def deleteAtIndex(self, index: int) -> None:
+            """
+            Delete the index-th node in the linked list, if the index is valid.
+            """
+            if index < 0 or index >= self.size:
+                return
+            
+            
+            
