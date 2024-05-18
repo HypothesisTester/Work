@@ -32,3 +32,11 @@ class MyLinkedList(object):
         """
         self.addAtIndex(0, val)
         
+        if index <= 0:
+            new_node.next = current
+            self.head = new_node
+        else:
+            for _ in range(index - 1):
+                current = current.next
+            new_node.next = current.next
+            current.next = new_node
