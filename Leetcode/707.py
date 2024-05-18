@@ -40,3 +40,5 @@ class MyLinkedList(object):
                 current = current.next
             new_node.next = current.next
             current.next = new_node
+            
+        self.size += 1
