@@ -16,3 +16,7 @@ class BrowserHistory:
 # obj.visit(url)
 # param_2 = obj.back(steps)
 # param_3 = obj.forward(steps)
+
+class ListNode:
+    def __init__(self, x):
+        self
