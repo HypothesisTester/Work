@@ -6,4 +6,5 @@ def insertionSort(arr):
             # arr[j] and arr[j + 1] are out of order so swap them
             tmp = arr[j + 1]
             arr[j] = tmp
-            
+            j -= 1
+    return arr
