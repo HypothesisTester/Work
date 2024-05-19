@@ -6,3 +6,6 @@ class BrowserHistory:
         
     
     def back(self, steps: int) -> str:
+        
+    
+    def forward(self, steps: int) -> str
