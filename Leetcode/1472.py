@@ -5,4 +5,4 @@ class BrowserHistory:
     def visit(self,url: str) -> None:
         
     
-    def back
+    def back(self, steps: int) -> str:
