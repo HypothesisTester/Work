@@ -33,4 +33,11 @@ class BrowserHistory:
         node = ListNode(url)
         node.prev = self.root
         self.root.next = node
-        self.root = self
+        self.root = self.root.next
+        
+    def back(self, steps: int) -> str:
+        while(steps and self.root.prev):
+            self.root = self.root.prev
+            steps -= 1
+        return self.root.val
+    
