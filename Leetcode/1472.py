@@ -19,4 +19,15 @@ class BrowserHistory:
 
 class ListNode:
     def __init__(self, x):
-        self
+        self.val = x
+        self.next = None
+        Self.prev = None
+        
+
+class BrowserHistory:
+    
+    def __init__(self, homepage: str):
+        self.root = ListNode(homepage)
+        
+    def visit(self, url: str) -> None:
+        node = ListNode(url)
