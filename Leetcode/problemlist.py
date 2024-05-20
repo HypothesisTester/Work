@@ -13,3 +13,8 @@ def fib(self, N: int) -> int:
         c = a+b
         a, b = b, c
     return c
+
+# Or
+
+class Solution:
+    
