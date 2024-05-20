@@ -6,3 +6,7 @@ class Solution:
     
 # Or
 
+def fib(self, N: int) -> int:
+    if N < 2: return N
+    a, b = 0, 1
+    
