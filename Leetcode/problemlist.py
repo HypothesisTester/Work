@@ -19,6 +19,11 @@ def fib(self, N: int) -> int:
 class Solution:
     def fib(self, n: int) -> int:
         if n == 0 or n == 1:
-			return n
+             return n
+        
+        dp = [0 for _ in range(n + 1)]
+
+        dp[0] = 0
+        dp[1] = 1
         
         
