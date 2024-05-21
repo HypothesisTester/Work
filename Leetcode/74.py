@@ -8,3 +8,6 @@ class Solution:
         
         if target > matrix[row][-1]:
             top = row + 1
+        
+        elif target < matrix[row][0]:
+            
