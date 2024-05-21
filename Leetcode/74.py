@@ -26,3 +26,6 @@ class Solution:
             
             if target > matrix[row][m]:
                 l = m + 1
+                
+            elif target < matrix[row][m]:
+                r = m - 1
