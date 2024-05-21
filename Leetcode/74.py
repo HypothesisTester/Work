@@ -10,4 +10,9 @@ class Solution:
             top = row + 1
         
         elif target < matrix[row][0]:
+            bot = row - 1
             
+        else:
+            break
+        
+        
