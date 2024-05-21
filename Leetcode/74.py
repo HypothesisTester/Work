@@ -4,3 +4,5 @@ class Solution:
         
         top, bot = 0, ROWS - 1
         while top <= bot:
+            row = (top + bot) // 2
+            if target > matrix[row][-1]:
