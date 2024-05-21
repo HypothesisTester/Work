@@ -29,3 +29,9 @@ class Solution:
                 
             elif target < matrix[row][m]:
                 r = m - 1
+                
+             else:
+                return True
+            
+             else:
+                return True
