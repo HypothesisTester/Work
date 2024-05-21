@@ -7,5 +7,8 @@ class Solution:
             # (l + r) // 2 can lead to overflow
             if nums[m] > target:
                 r = m - 1
-                elif nums[m] < target:
+            elif nums[m] < target:
                 l = m + 1
+            else:
+                return m
+        return -1
