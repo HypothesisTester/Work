@@ -39,4 +39,25 @@ def guessNumber(self, n: int) -> int:
                 return mid
             
             
+class Solution:
+    def guessNumber(self, n: int) -> int:
+        low = 1
+        high = n
+        
+        while low<=high:
+            mid = (low+high)//2
+            gussed = guess(mid)
+            
+            if gussed == 0:
+                return mid
+            if gussed<0:
+                high = mid-1
+            else:
+                low = mid+1
+        
+        return low
+            
+
+
+            
             
