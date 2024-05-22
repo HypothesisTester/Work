@@ -84,6 +84,16 @@ class Solution:
             elif result == 1:
                 l = mid + 1
         return mid
-        
-            
-            
+    
+    class Solution:
+    def guessNumber(self, n: int) -> int:
+        pick_range = [1, n]
+        while True:
+            pick = sum(pick_range) // 2
+            result = guess(pick)
+            if result > 0:
+                pick_range[0] = pick + 1
+                elif result < 0:
+                pick_range[1] = pick - 1
+            else:
+                return pick
