@@ -93,7 +93,7 @@ class Solution:
             result = guess(pick)
             if result > 0:
                 pick_range[0] = pick + 1
-                elif result < 0:
+            elif result < 0:
                 pick_range[1] = pick - 1
             else:
                 return pick
