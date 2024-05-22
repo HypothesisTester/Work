@@ -7,4 +7,5 @@
 
 class Solution:
     def guessNumber(self, n: int) -> int:
-        
+        lowerBound, upperBound = 1, n
+        # Binary division faster than (lowerBound + upperBound) //2
