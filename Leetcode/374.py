@@ -12,3 +12,5 @@ class Solution:
         myGuess = (lowerBound+upperBound) >> 1
         # walrus operator ':=' - assigns value of the function to the variable 'res'
         # and then compare res with 0
+        while (res := guess(myGuess)) != 0:
+            
