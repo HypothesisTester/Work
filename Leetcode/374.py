@@ -69,6 +69,21 @@ class Solution:
                 left=mid+1
             else:
                 right=mid-1
+                
+class Solution:
+    def guessNumber(self, n: int) -> int:
+        l = 1
+        r = n
+        while l<=r:
+            mid = l + (r-l)//2
+            result = guess(mid)
+            if result == 0:
+                return mid
+            elif result == -1:
+                r = mid -1
+            elif result == 1:
+                l = mid + 1
+        return mid
         
             
             
