@@ -15,4 +15,8 @@ class Solution:
         while (res := guess(myGuess)) != 0:
             if res == 1:
                 lowerBound = myGuess+1
-            
+            else:
+                upperBound = myGuess-1
+            myGuess = (lowerBound+upperBound) >> 1
+        
+        return myGuess
