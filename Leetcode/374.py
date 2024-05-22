@@ -13,4 +13,6 @@ class Solution:
         # walrus operator ':=' - assigns value of the function to the variable 'res'
         # and then compare res with 0
         while (res := guess(myGuess)) != 0:
+            if res == 1:
+                lowerBound = myGuess+1
             
