@@ -25,7 +25,7 @@ class Solution:
                     start = mid + 1
                                 
                 else:
-                       end = mid - 1
-                        result = mid
+                    end = mid - 1
+                    result = mid
                        
 		return result
