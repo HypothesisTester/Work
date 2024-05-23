@@ -20,3 +20,6 @@ class Solution:
              while start <= end:
                   
                   mid = (start + end) // 2
+                  
+                  if isBadVersion(mid) == False:
+				start = mid + 1
