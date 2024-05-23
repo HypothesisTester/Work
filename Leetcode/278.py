@@ -23,3 +23,5 @@ class Solution:
                   
                   if isBadVersion(mid) == False:
 				start = mid + 1
+                                
+                else:
