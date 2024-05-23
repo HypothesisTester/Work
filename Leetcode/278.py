@@ -18,9 +18,14 @@ class Solution:
         start, end = 1, n
              
          while start <= end:
+                
                 mid = (start + end) // 2
                   
-if isBadVersion(mid) == False:
-				start = mid + 1
+                if isBadVersion(mid) == False:
+                    start = mid + 1
                                 
                 else:
+                       end = mid - 1
+                        result = mid
+                       
+		return result
