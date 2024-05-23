@@ -8,3 +8,8 @@ def firstBadVersion(self, n):
         else:
             i = pivot + 1   # the one after the rightmost good version
     return i   
+
+# Or
+
+class Solution:
+	def firstBadVersion(self, n: int) -> int:
