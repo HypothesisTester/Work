@@ -13,3 +13,7 @@ def firstBadVersion(self, n):
 
 class Solution:
 	def firstBadVersion(self, n: int) -> int:
+             result = 1
+             start, end = 1, n
+             
+             while start <= end:
