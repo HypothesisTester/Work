@@ -3,3 +3,5 @@ def firstBadVersion(self, n):
         j = n
         while (i < j):
                 pivot = (i+j) // 2
+                if (isBadVersion(pivot)):
+                        
