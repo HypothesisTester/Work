@@ -58,4 +58,15 @@ class Solution:
 		return result
         
         
+
+                if isBadVersion(mid) == False:
+                    start = mid + 1
+                                
+                else:
+                    end = mid - 1
+                    result = mid
+                       
+		return result
         
+            if (isBadVersion(pivot)):
+            j = pivot       # keep track of the l
