@@ -33,4 +33,5 @@ class Grid:
                 return row
             
         
-    def
+    def checkWin(self, connectN, row, col, piece):
+        
