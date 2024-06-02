@@ -23,5 +23,14 @@ class Grid:
         return self._columns
     
     def placePiece(self, column, piece):
-        if column < 0
+        if column < 0 or column >= self._columns:
+            raise ValueError("Invalid column")
+        if piece == GridPosition.EMPTY:
+            raise ValueError('Invalid piece')
+        for row in range(self._rows-1, -1, -1):
+            if self._grid[row][column] == GridPosition.EMPTY:
+                self._grid[row][column] = piece
+                return row
+            
         
+    def
