@@ -11,3 +11,5 @@ class Grid:
         self._columns = columns
         self.grid = None
         self.initGrid()
+        
+    def initGrid
