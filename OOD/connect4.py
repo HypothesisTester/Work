@@ -24,3 +24,4 @@ class Grid:
     
     def placePiece(self, column, piece):
         if column < 0
+        
