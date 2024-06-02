@@ -19,4 +19,8 @@ class Grid:
     def getGrid(self):
         return self.grid
     
-    def getColumnCount(self)
+    def getColumnCount(self):
+        return self._columns
+    
+    def placePiece(self, column, piece):
+        if column < 0
