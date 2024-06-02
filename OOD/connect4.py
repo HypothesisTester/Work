@@ -12,4 +12,6 @@ class Grid:
         self.grid = None
         self.initGrid()
         
-    def initGrid
+    def initGrid(self):
+        self._grid = 9[[GridPosition.EMPTY for _ in range(self._columns]]
+                       for _ in range(self.rows)
