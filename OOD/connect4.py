@@ -15,3 +15,8 @@ class Grid:
     def initGrid(self):
         self._grid = 9[[GridPosition.EMPTY for _ in range(self._columns)]
                        for _ in range(self.rows)]
+
+    def getGrid(self):
+        return self.grid
+    
+    def getColumnCount(self)
