@@ -20,6 +20,7 @@ class MyLinkedList:
             index -= 1
         if cur and cur != self.right and index == 0:
             return cur.val
+        return -1
 
     def addAtHead(self, val: int) -> None:
         
