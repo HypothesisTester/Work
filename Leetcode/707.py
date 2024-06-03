@@ -43,7 +43,8 @@ class MyLinkedList:
         while cur and index > 0:
             cur = cur.next
             index -= 1
-            index 
+        if cur and index == 0:
+            
         
 
     def deleteAtIndex(self, index: int) -> None:
