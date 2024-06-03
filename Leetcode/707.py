@@ -23,6 +23,11 @@ class MyLinkedList:
         return -1
 
     def addAtHead(self, val: int) -> None:
+        node, next, prev = ListNode(val), self.left.next, self.left
+        prev.next = node
+        next.prev = node
+        node.next = next
+        node.prev = prev
         
         
 
