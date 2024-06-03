@@ -39,6 +39,11 @@ class MyLinkedList:
         node.prev = prev
 
     def addAtIndex(self, index: int, val: int) -> None:
+        cur = self.left.next
+        while cur and index > 0:
+            cur = cur.next
+            index -= 1
+            index 
         
 
     def deleteAtIndex(self, index: int) -> None:
