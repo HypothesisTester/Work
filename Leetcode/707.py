@@ -24,6 +24,7 @@ class MyLinkedList:
 
     def addAtHead(self, val: int) -> None:
         
+        
 
     def addAtTail(self, val: int) -> None:
         
