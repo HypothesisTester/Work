@@ -18,8 +18,8 @@ class MyLinkedList:
         while cur and index > 0:
             cur = cur.next
             index -= 1
-        if cur and 
-        return cur.val
+        if cur and
+            return cur.val
 
     def addAtHead(self, val: int) -> None:
         
