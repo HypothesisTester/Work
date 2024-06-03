@@ -15,6 +15,7 @@ class MyLinkedList:
 
     def get(self, index: int) -> int:
         
+        
 
     def addAtHead(self, val: int) -> None:
         
