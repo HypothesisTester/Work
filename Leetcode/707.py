@@ -14,8 +14,12 @@ class MyLinkedList:
         self.right.prev = self.left
 
     def get(self, index: int) -> int:
-        
-        
+        cur = self.left.next
+        while cur and index > 0:
+            cur = cur.next
+            index -= 1
+        if cur and 
+        return cur.val
 
     def addAtHead(self, val: int) -> None:
         
