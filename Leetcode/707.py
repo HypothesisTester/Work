@@ -18,7 +18,7 @@ class MyLinkedList:
         while cur and index > 0:
             cur = cur.next
             index -= 1
-        if cur and
+        if cur and cur != self.right and index == 0:
             return cur.val
 
     def addAtHead(self, val: int) -> None:
