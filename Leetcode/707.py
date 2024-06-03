@@ -44,7 +44,7 @@ class MyLinkedList:
             cur = cur.next
             index -= 1
         if cur and index == 0:
-            node, next, prev = ListNode(val), self.right, self.right.prev
+            node, next, prev = ListNode(val), cur, cur.prev
             prev.next = node
             next.prev = node
             node.next = next
