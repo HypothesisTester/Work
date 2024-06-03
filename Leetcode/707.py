@@ -3,11 +3,15 @@ class ListNode:
         self.val = val
         self.prev = None
         self.next = None
+    
 
 class MyLinkedList:
 
     def __init__(self):
-        
+        self.left = ListNode(0)
+        self.right = ListNode(0)
+        self.left.next = self.right
+        self.right.prev = self.left
 
     def get(self, index: int) -> int:
         
