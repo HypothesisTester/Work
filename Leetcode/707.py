@@ -52,6 +52,16 @@ class MyLinkedList:
         
 
     def deleteAtIndex(self, index: int) -> None:
+        cur = self.left.next
+        while cur and index > 0:
+            cur = cur.next
+            index -= 1
+        if cur and index == 0:
+            node, next, prev = ListNode(val), cur, cur.prev
+            prev.next = node
+            next.prev = node
+            node.next = next
+            node.prev = prev
         
 
 
