@@ -32,7 +32,11 @@ class MyLinkedList:
         
 
     def addAtTail(self, val: int) -> None:
-        
+        node, next, prev = ListNode(val), self.right, self.right.prev
+        prev.next = node
+        next.prev = node
+        node.next = next
+        node.prev = prev
 
     def addAtIndex(self, index: int, val: int) -> None:
         
