@@ -15,6 +15,7 @@ class BrowserHistory:
         
 
     def back(self, steps: int) -> str:
+        while self.cur and steps 
         
 
     def forward(self, steps: int) -> str:
