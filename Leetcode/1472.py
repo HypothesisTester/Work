@@ -16,13 +16,16 @@ class BrowserHistory:
 
     def back(self, steps: int) -> str:
         while self.cur and steps > 0:
-            self.cur = self.cu.prev
+            self.cur = self.cur.prev
             steps -= 1
         return self.cur.val
         
 
     def forward(self, steps: int) -> str:
-        
+        while self.cur and steps > 0:
+            self.cur = self.cur.next
+            steps -= 1
+        return self.cur.val
 
 
 # Your BrowserHistory object will be instantiated and called as such:
