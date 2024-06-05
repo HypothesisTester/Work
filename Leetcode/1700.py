@@ -9,8 +9,6 @@ class Solution:
                 cnt[s] -= 1
             else:
                 return res
-        
-        
-        
+            
         return res
         
