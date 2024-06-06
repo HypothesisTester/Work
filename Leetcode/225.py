@@ -1,6 +1,9 @@
+from collections import deque
+
 class MyStack:
 
     def __init__(self):
+        # Initialize an empty deque to simulate stack operations
         self.q = deque()
 
     def push(self, x: int) -> None:
