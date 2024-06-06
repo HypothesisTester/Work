@@ -12,6 +12,9 @@ class MyStack:
         
 
     def pop(self) -> int:
+        # Rotate the deque to simulate stack pop operation
+        # Move all elements except the last one to the front of the deque
+
         for i in range(len(self.q) - 1):
             self.push(self.q.popleft())
         return self.q.popleft()
