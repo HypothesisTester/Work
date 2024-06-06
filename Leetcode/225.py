@@ -20,10 +20,12 @@ class MyStack:
         return self.q.popleft()
 
     def top(self) -> int:
+         # Return the last element in the deque, which is the top of the stack
         return self.q[-1]
         
 
     def empty(self) -> bool:
+        # Return True if the deque is empty, else False
         return len(self.q) == 0
         
 
