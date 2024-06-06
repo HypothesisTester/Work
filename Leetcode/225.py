@@ -7,6 +7,7 @@ class MyStack:
         self.q = deque()
 
     def push(self, x: int) -> None:
+        # Append the element to the end of the deque
         self.q.append(x)
         
 
