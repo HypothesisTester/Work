@@ -1,72 +1,19 @@
-def firstBadVersion(self, n):
-    i = 1
-    j = n
-    while (i < j):
-        pivot = (i+j) // 2
-        if (isBadVersion(pivot)):
-            j = pivot       # keep track of the leftmost bad version
-        else:
-            i = pivot + 1   # the one after the rightmost good version
-    return i   
-
-# Or
+# This is a placeholder for the isBadVersion API. In practice, this would be provided.
+def isBadVersion(version: int) -> bool:
+    pass  # Placeholder implementation
 
 class Solution:
-	def firstBadVersion(self, n: int) -> int:
-        
-        result = 1
+    def firstBadVersion(self, n: int) -> int:
         start, end = 1, n
-             
-         while start <= end:
-                
-                mid = (start + end) // 2
-                  
-                if isBadVersion(mid) == False:
-                    start = mid + 1
-                                
-                else:
-                    end = mid - 1
-                    result = mid
-                       
-		return result
+        result = -1  # Initialize result to -1 to indicate no bad version found (optional)
         
-            if (isBadVersion(pivot)):
-            j = pivot       # keep track of the leftmost bad version
-        else:
-            i = pivot + 1   # the one after the rightmost good version
-    return i   
-
-# Or
-
-class Solution:
-	def firstBadVersion(self, n: int) -> int:
+        while start <= end:
+            mid = (start + end) // 2
+            
+            if not isBadVersion(mid):
+                start = mid + 1
+            else:
+                end = mid - 1
+                result = mid
         
-        result = 1
-        start, end = 1, n
-             
-         while start <= end:
-                
-                mid = (start + end) // 2
-                  
-                if isBadVersion(mid) == False:
-                    start = mid + 1
-                                
-                else:
-                    end = mid - 1
-                    result = mid
-                       
-		return result
-        
-        
-
-                if isBadVersion(mid) == False:
-                    start = mid + 1
-                                
-                else:
-                    end = mid - 1
-                    result = mid
-                       
-		return result
-        
-            if (isBadVersion(pivot)):
-            j = pivot       # keep track of the l
+        return result
