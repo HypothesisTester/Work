@@ -1,0 +1,52 @@
+Outline Plan for Integrating Game State-Dependent Poker Statistics
+
+Contextual Setup
+
+Game State Tracking: Ensure your game logic can accurately determine the current state of the game, especially distinguishing between pre-flop, post-flop, and showdown phases.
+Postflop Actions (Call, Bet, Raise)
+
+Tracking Postflop Actions:
+Objective: Update player statistics based on actions taken after the flop.
+Implementation:
+In your game loop, identify when the game moves into the postflop phase (after the flop cards are dealt).
+Monitor player actions during this phase. When a player bets, raises, or calls, update their statistics accordingly.
+
+Example Code:
+
+if is_postflop():
+    if player_action == 'bet':
+        player.stats.update_postflop_action('bet')
+    elif player_action == 'raise':
+        player.stats.update_postflop_action('raise')
+    elif player_action == 'call':
+        player.stats.update_postflop_action('call')
+
+
+
+Showdown Frequency
+
+Tracking Showdown Frequency:
+Objective: Record how often a player reaches the showdown.
+Implementation:
+At the end of each hand, check if the player is still in the game and has reached the showdown.
+Update the player's showdown statistics if they have reached this stage.
+
+Example Code:
+
+if player_reaches_showdown(player):
+    player.stats.update_showdown()
+
+
+
+Preflop Raise Frequency
+
+Tracking Preflop Raises:
+Objective: Keep track of how often a player raises during the pre-flop round.
+Implementation:
+In the pre-flop betting round, monitor player actions.
+If a player raises, update their preflop raise statistics.
+
+Example Code:
+
+if is_preflop() and action_is_raise(player_action):
+    player.stats.update_preflop_raise()
