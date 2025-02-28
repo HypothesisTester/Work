@@ -41,7 +41,7 @@ def exponential_goodness_of_fit(n=100, mean=0.5, bin_width=0.25, max_range=3.0, 
     
     # Plot
     plt.figure(figsize=(8,4))
-    # For plotting, comit the infinity edge (edges[:-1])
+    # For plotting, omit the infinity edge (edges[:-1])
     plt.hist(data, bins=edges[:-1], alpha=0.7, edgecolor='black')
     plt.title(f"Histogram of {n} Exponential(Mean={mean}) Values")
     plt.xlabel("Value")

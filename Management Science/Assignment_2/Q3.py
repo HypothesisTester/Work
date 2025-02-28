@@ -79,7 +79,7 @@ if __name__ == "__main__":
         random_seed=42
     )
     
-    # 2) Computerized system
+    # 2) Computerised system
     c2, w2, q2 = simulate_queue(
         num_customers=500,
         arrival_rate_per_hour=10.0,
@@ -104,7 +104,7 @@ if __name__ == "__main__":
     print("=== Current System ===")
     print(f"Hourly Cost: {c1:.2f} €, Avg Wait: {w1:.2f} min, Avg Queue: {q1:.2f}\n")
     
-    print("=== Computerized System ===")
+    print("=== Computerised System ===")
     print(f"Hourly Cost: {c2:.2f} €, Avg Wait: {w2:.2f} min, Avg Queue: {q2:.2f}\n")
     
     print("=== New Registrar ===")

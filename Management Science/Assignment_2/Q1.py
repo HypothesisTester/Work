@@ -24,7 +24,7 @@ def simulate_comcom_stock(days=365, initial_price=62, seed=None):
     dec_fracs = [1/8, 1/4, 3/8, 1/2, 5/8, 3/4, 7/8, 1.0]
     dec_probs = [0.12, 0.15, 0.18, 0.21, 0.14, 0.10, 0.05, 0.05]
 
-    # Initialize
+    # Initialise
     price = initial_price
     price_path = [price]  # store price for day 0
 
