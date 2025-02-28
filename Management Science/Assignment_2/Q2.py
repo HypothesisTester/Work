@@ -16,7 +16,7 @@ def exponential_goodness_of_fit(n=100, mean=0.5, bin_width=0.25, max_range=3.0, 
     # Generate data
     data = np.random.exponential(scale=mean, size=n)
     
-    # Define bin edges: [0, bin_width, 2*bin_width, ... up to < max_range], then one final bin for [max_range, inf)
+    # Define bin edges
     edges = np.arange(0, max_range, bin_width)
     edges = np.append(edges, [np.inf])  # ensures total sum is exactly n
     
