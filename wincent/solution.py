@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-#  Two moves with rooks  – correct version
-#
+
 #  1 white move  ➜  1 black move   –  count all ordered pairs  (mod 1e9+7)
 #
 #  Public limits (t ≤ 30, d,n ≤ 100) are tiny, so the straightforward
