@@ -3,7 +3,7 @@ import sys
 from collections import deque
 
 """helpers"""
-def rotate_ccw(g: list [str]) -> list[str]:
+def rotate_ccw(g: list[str]) -> list[str]:
     # 90 deg counter clockwise
     h, w = len(g), len(g[0])
     return [''.join(g[r][c] for r in range(h)) for c in range(w - 1, - 1, -1)]
@@ -34,7 +34,7 @@ def match_with_row_insertions(img: list[str], ref: list[str]) -> bool:
         return False
     
     seen = [[False]*(r) for _ in range(h)]
-    dq: deque[tuple[int, int]] = deque([0, 0])
+    dq:deque[tuple[int, int]] = deque([(0, 0)])
     seen[0][0] = True
 
     while dq:
